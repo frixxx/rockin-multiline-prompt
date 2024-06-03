@@ -25,5 +25,5 @@ zstyle ':vcs_info:git*' formats " $fg[blue]($reset_color%b%m$fg[blue])$reset_col
 zstyle ':vcs_info:git*' actionformats "(%s|%a) %12.12i %c%u %b%m"
 zstyle ':vcs_info:git*+set-message:*' hooks git-st git-stash
 
-PROMPT="🤘 %{$fg[cyan]%}%~%{$reset_color%}"
+PROMPT="🤘 @ %m%%{$fg[cyan]%}%~%{$reset_color%}"
 PROMPT+="\$vcs_info_msg_0_ "$'\n'" ↳ "
