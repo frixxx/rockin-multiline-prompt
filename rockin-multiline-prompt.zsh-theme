@@ -26,7 +26,7 @@ zstyle ':vcs_info:git*' actionformats "(%s|%a) %12.12i %c%u %b%m"
 zstyle ':vcs_info:git*+set-message:*' hooks git-st git-stash
 
 if [[ -n "$ROCKIN_MULTILINE_PROMPT_IS_SERVER" ]]; then
-    PROMPT="🤘 %{$fg[green]%}@%m:%{$reset_color%} %{$fg[cyan]%}%~%{$reset_color%}"
+    PROMPT="🤘 %{$fg[green]%}%n@%m:%{$reset_color%} %{$fg[cyan]%}%~%{$reset_color%}"
 else
     PROMPT="🤘 %{$fg[cyan]%}%~%{$reset_color%}"
 fi
